@@ -279,7 +279,7 @@ resource "azurerm_availability_set" "test" {
   name                         = "acctestavset-%d"
   location                     = "${azurerm_resource_group.test.location}"
   resource_group_name          = "${azurerm_resource_group.test.name}"
-  platform_update_domain_count = 10
+  platform_update_domain_count = 1
   platform_fault_domain_count  = 1
 }
 `, rInt, location, rInt)
@@ -296,7 +296,7 @@ resource "azurerm_availability_set" "test" {
   name                         = "acctestavset-%d"
   location                     = "${azurerm_resource_group.test.location}"
   resource_group_name          = "${azurerm_resource_group.test.name}"
-  platform_update_domain_count = 10
+  platform_update_domain_count = 1
   platform_fault_domain_count  = 1
   managed                      = true
 }
